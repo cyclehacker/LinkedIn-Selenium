@@ -1,26 +1,24 @@
-# Skeleton Asos product category crawler
+# Skeleton LinkedIn crawler
 
-Build using Python 3.6.9 and Scrapy 1.8.0.
+Build using Python 3.6.9, Selenium 3.141.0 and Parsel 1.5.2
 
-Configured to scrape the mens shoes categories product names and prices.
+This script uses Selenium to first login to LinkedIn, then search LinkedIn using a search query and Google.
 
-Change or add top level product category url(s) in the 'start_url' list to crawl different categories, e.g.:
+Add your LinkedIn Username/Password in parameters.py and change the Google search query as required.
 
-'https://www.asos.com/men/jeans/cat/?cid=4208&nlid=mw|clothing|shop+by+product'
+Currently configured to loop through the Google results and return:
 
-Dump to .csv, .json, xml etc using scrapy -o command line argument:
+Name 
+Job Title
+Location
+Schools
+LinkedIn Profile Url
 
-scrapy crawl asos_shoes -o output_filename.csv
+And output to CSV.
 
 # Future updates:
 
 - Expand range of data crawled to include all available data.
 - Write tests to Travis
-- Add user input to select product categories to be crawled.
-- Add support for different market domains.
-- Add Flask based web app to receive user input.
-- Add crawled data to database.
-- Create output files and email to user.
-- Make categories stored in the database available for download.
-- Add daily monitoring tests to ensure continuity of service.
+- Add user input to customise google search query to be crawled.
 
