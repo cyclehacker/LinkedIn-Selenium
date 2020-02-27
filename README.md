@@ -9,10 +9,10 @@ Add your LinkedIn Username/Password in parameters.py and change the Google searc
 Currently configured to loop through the Google results and return:
 
 Markup : - Name
-         -Job Title
-         -Location
-         -Schools
-         -LinkedIn Profile Url
+         - Job Title
+         - Location
+         - Schools
+         - LinkedIn Profile Url
 
 Outputs to CSV.
 
